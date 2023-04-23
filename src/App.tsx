@@ -1,10 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import React, { FC, ReactNode } from "react";
 
-function App() {
+const App: FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
+      <Header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,9 +18,18 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </Header>
     </div>
   );
-}
+};
+
+type HeaderProps = {
+  children: ReactNode;
+  className: string;
+};
+
+const Header: FC<HeaderProps> = ({ children, className }) => {
+  return <header className={className}>{children}</header>;
+};
 
 export default App;
