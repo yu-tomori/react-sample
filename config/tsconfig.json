@@ -1,3 +1,4 @@
 {
-  "files": ["src/custom.d.ts"]
+  "include": ["src/**/*"],
+  "exclude": ["src/node_modules"]
 }
