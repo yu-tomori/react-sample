@@ -1,5 +1,5 @@
 import './App.css';
-import React, { FC, ReactNode } from 'react';
+import React, { FC } from 'react';
 import Layout from './components/Layout';
 import Header from './components/Header';
 
