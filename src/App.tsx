@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { FC, ReactNode } from 'react';
 import Layout from './components/Layout';
@@ -8,7 +7,6 @@ const App: FC = () => {
   return (
     <div className="App">
       <Header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
