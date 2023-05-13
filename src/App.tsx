@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, { FC, ReactNode } from 'react';
 import Layout from './components/Layout';
+import Header from './components/Header';
 
 const App: FC = () => {
   return (
@@ -26,14 +27,4 @@ const App: FC = () => {
     </div>
   );
 };
-
-type HeaderProps = {
-  children: ReactNode;
-  className: string;
-};
-
-const Header: FC<HeaderProps> = ({ children, className }) => {
-  return <header className={className}>{children}</header>;
-};
-
 export default App;
