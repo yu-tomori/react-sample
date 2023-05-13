@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { FC, ReactNode } from 'react';
+import Layout from './components/Layout';
 
 const App: FC = () => {
   return (
@@ -19,6 +20,9 @@ const App: FC = () => {
           Learn React
         </a>
       </Header>
+      <Layout>
+        <div>content</div>
+      </Layout>
     </div>
   );
 };
